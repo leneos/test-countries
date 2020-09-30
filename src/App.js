@@ -73,8 +73,8 @@ function App() {
             }}
           />
           {renderButtons()}
-          {isLoading ? <Loader /> : null}
         </div>
+        {isLoading ? <Loader /> : null}
         <div className="countries row">
           {filteredCountries.map((item, index) => {
             if (index < listLength) {
